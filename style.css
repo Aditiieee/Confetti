@@ -1,24 +1,29 @@
-.confetti-button:hover{
-	background: darkcyan;
-}
-.confetti-button:active{
-	background: lightcyan;
-}
-
-.button-wrapper {
-  position: relative;
-  width: 200px;
-  height: 60px;
-  margin: 250px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.confetti-button {
-  text-align: center;
-  width: 240px;
-  cursor: pointer;
-  padding: 10px 0;
-  border-radius: 5px;
+html, body{
+	height: 100%;
+	width: 100%;
+}
+
+#bulb{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	border: 3px solid #000;
+}
+
+button{
+	padding: 10px 30px;
+	margin: 80px;
+	border-radius: 10px;
+	background-color: cyan;
+	font-weight: 600;
+	cursor: pointer;
 }

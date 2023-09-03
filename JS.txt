@@ -8,6 +8,7 @@ console.log(i);
 }
 console.log(i);
 here the browser will add the second console stmt too but if let or const is used it gives an error
+
 var adds itself to the window object, let & const doesn't
 
 stack --> first in first out
@@ -34,7 +35,7 @@ copying reference values ---> if it's an array than [...var name], for an object
 
 conditionals ---> if else, else-if block
 for ---> for(start; end; change){}
-forEach ---> it is used in acse of an array, it doesn't make any changes in the array rather makes changes in the copy of the array
+forEach ---> it is used in case of an array, it doesn't make any changes in the array rather makes changes in the copy of the array
 a.forEach(val){
 console.log(val+2);}
 where a is the array
@@ -61,7 +62,7 @@ console.log("run after 2 secs");
 }, 2000);
 where 2000 is the value in miliseconds so 2000 means it will run after 2 secs
 
-first class functions ---> functions can be stored in variables & used
+first class functions ---> Also known as higher order functions can be stored in variables & used
 function abcd(a){
 a();
 }
@@ -86,3 +87,36 @@ arr.splice(2,1) ---> will remove an item at the 2nd index, if u wnat to remove m
 object ---> holding details in a key value pair
 properties ---> var a ={ color: blue, type: a} where color & type are properties
 method ---> any property whose value is equal to a function var a = {price: function(){}}
+
+Higher order functions are the func which can accept other func as mentioned above in 1ft class func or return any other func
+
+constructor functions ---> regular func where this & new are used, used when u need to make n number of items having same properties
+it returns an object with all of the properties & methods mentioned inside that function with this keyword
+
+New ---> new keyword creates a new object for the constructor func to be called
+
+iife ---> Immediately invoked function expression
+This function is invoked immediately & is used for private var, they can't be accessed or changed outside the func
+var ans = (function (){
+var privateval =12;
+return{
+getter: function(){
+console.log(privateval);
+},
+setter: function(val){
+privateval = val;
+}
+}
+})()
+
+prototype
+
+prototypal inheritance ---> as the name suggests makes possible to inherit properties of other object
+var a ={}
+var b = {}
+b.__proto__ = a;
+
+A func which is inside an object is called a method
+
+
+
